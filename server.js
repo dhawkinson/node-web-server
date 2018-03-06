@@ -44,14 +44,19 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
   res.render('home', {
       pageTitle: 'Home Page',
-      welcomeMessage: 'Welcome to Doug\'s Page'
+      welcomeMessage: 'Welcome to Doug\'s Site'
   });
 });
-
 
 app.get('/about', (req, res) => {
   res.render('about', {
       pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+      pageTitle: 'Projects Page'
   });
 });
 
